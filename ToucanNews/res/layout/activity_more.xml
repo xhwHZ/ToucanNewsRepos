@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:xhw="http://schemas.android.com/apk/res/com.xhw.toucan.news"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+          android:layout_marginBottom="5dp"
+        android:fillViewport="true" 
+        >
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#EEEEEE" >
+
+            <TextView
+                android:id="@+id/tv_title"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/title_red_bg"
+                android:gravity="center"
+                android:text="更多信息"
+                android:textSize="22sp" />
+
+            <FrameLayout
+                android:id="@+id/fl_root"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_below="@id/tv_title" >
+            </FrameLayout>
+
+            <!-- 自定义属性示例 -->
+
+        <!--     <com.xhw.toucan.news.view.MoreItemView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                xhw:skill_icon="@drawable/ic_contact"
+                xhw:skill_title="javascript"
+                xhw:skill_value="80" /> -->
+        </RelativeLayout>
+    </ScrollView>
+
+    <ProgressBar 
+        android:id="@+id/progressBar"
+        android:layout_width="55dp"
+        android:layout_height="55dp"
+        android:layout_centerInParent="true"
+        />
+    
+    <RelativeLayout
+        android:id="@+id/rl_retry"
+        android:visibility="invisible"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center" >
+
+        <ImageView
+            android:id="@+id/page_iv"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_centerHorizontal="true"
+            android:scaleType="centerInside"
+            android:src="@drawable/ic_error_page" />
+
+        <Button
+            android:id="@+id/btn_retry"
+            android:layout_width="wrap_content"
+            android:layout_height="34dp"
+            android:layout_below="@id/page_iv"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/btn_bg"
+            android:ellipsize="end"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:singleLine="true"
+            android:text="点击重新加载"
+            android:textColor="#ff717171"
+            android:textSize="14dp" />
+    </RelativeLayout>
+    
+</RelativeLayout>

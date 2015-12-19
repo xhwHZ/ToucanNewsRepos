@@ -1,0 +1,414 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/scrollView"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#EEEEEE"
+        android:orientation="vertical" >
+
+        <LinearLayout
+            android:id="@+id/ll_head"
+            android:layout_width="match_parent"
+            android:layout_height="150dp"
+            android:background="#232726"
+            android:orientation="horizontal" >
+
+            <FrameLayout
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="20dp" >
+
+                <ImageView
+                    android:id="@+id/iv_pic"
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
+                    android:background="@drawable/bg_photo"
+                    android:padding="5dip" />
+
+                <ImageView
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
+                    android:src="@drawable/photo_over2" />
+            </FrameLayout>
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@drawable/author_head_bg" />
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#F7F709"
+            android:text="个人简介"
+            android:paddingLeft="5dp"
+                android:textColor="#a000"
+            android:textSize="14sp" />
+
+        <View style="@style/splitor" />
+
+        <FrameLayout
+            android:id="@+id/fl_item1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" >
+
+            <LinearLayout style="@style/author_item" >
+
+                <ImageView
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginLeft="15dp"
+                    android:background="@drawable/ic_me" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical" >
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="20dp"
+                        android:layout_marginTop="5dp"
+                        android:text="关于我"
+                        android:textColor="#a000"
+                        android:textSize="22sp" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginRight="5dp"
+                        android:layout_marginTop="5dp"
+                        android:lines="2"
+                        android:paddingBottom="5dp"
+                        android:text="爱编程、爱学习、爱思考、热爱移动开发，羽翼未丰的安卓小菜鸟。"
+                        android:textColor="#5A626D"
+                        android:textSize="14sp" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <View style="@style/splitor" />
+        </FrameLayout>
+
+        <FrameLayout
+            android:id="@+id/fl_item2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" >
+
+            <LinearLayout style="@style/author_item" >
+
+                <ImageView
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginLeft="15dp"
+                    android:background="@drawable/ic_app" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical" >
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="20dp"
+                        android:layout_marginTop="5dp"
+                        android:text="个人作品"
+                        android:textColor="#a000"
+                        android:textSize="22sp" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginRight="5dp"
+                        android:layout_marginTop="5dp"
+                        android:lines="2"
+                        android:paddingBottom="5dp"
+                        android:text="www.baidu.com\nwww.google.com"
+                        android:textColor="#5A626D"
+                        android:textSize="14sp" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <View style="@style/splitor" />
+        </FrameLayout>
+
+        <FrameLayout
+            android:id="@+id/fl_item3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" >
+
+            <LinearLayout
+                android:id="@+id/ll_skill"
+                style="@style/author_item" >
+
+                <ImageView
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginTop="10dp"
+                    android:background="@drawable/ic_skill" />
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" >
+
+                    <TextView
+                        android:id="@+id/tv_skill_title"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="20dp"
+                        android:layout_marginTop="5dp"
+                        android:text="个人技能"
+                        android:textColor="#a000"
+                        android:textSize="22sp" />
+
+                    <TextView
+                        android:id="@+id/tv_skill"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/tv_skill_title"
+                        android:layout_marginBottom="5dp"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginRight="5dp"
+                        android:layout_marginTop="5dp"
+                        android:text="java、android、c#、unity3d、常用数据库、servlet、jsp...少侠请留步，我看你骨骼惊奇，天生就是练舞奇才，不如我们趁着夜色正好，给我来一首青花瓷，虽然我语无伦次，但是，哈哈哈，我只是测试的代码而是，真是个牺牲品啊啊啊啊啊啊啊啊啊。"
+                        android:textColor="#5A626D"
+                        android:textSize="14sp" />
+
+                    <ImageView
+                        android:id="@+id/iv_arrow"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_alignParentTop="true"
+                        android:layout_marginRight="5dp"
+                        android:layout_marginTop="5dp"
+                        android:background="@drawable/arrow_down" />
+                </RelativeLayout>
+            </LinearLayout>
+
+            <View style="@style/splitor" />
+        </FrameLayout>
+
+             <FrameLayout
+            android:id="@+id/fl_more"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" >
+
+           
+
+            <LinearLayout style="@style/author_item"
+                android:id="@+id/ll_more"
+                 >
+
+                <ImageView
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginLeft="15dp"
+                    android:background="@drawable/ic_more" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical" >
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="20dp"
+                        android:layout_marginTop="5dp"
+                        android:text="更多信息"
+                        android:textColor="#a000"
+                        android:textSize="22sp" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginRight="5dp"
+                        android:layout_marginTop="5dp"
+                        android:lines="2"
+                        android:paddingBottom="5dp"
+                        android:text="点击查看更多信息\n╰(￣▽￣)╮"
+                        android:textColor="#5A626D"
+                        android:textSize="14sp" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <View style="@style/splitor" />
+        </FrameLayout>
+        
+        
+         <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#F7F709"
+                android:text="联系我"
+                android:paddingLeft="5dp"
+                android:textColor="#a000"
+                android:textSize="14sp" />
+
+            <View style="@style/splitor" />
+        
+        <FrameLayout
+            android:id="@+id/fl_item4"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" >
+
+           
+
+            <LinearLayout style="@style/author_item"
+                android:id="@+id/ll_qq"
+                 >
+
+                <ImageView
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginLeft="15dp"
+                    android:background="@drawable/ic_qq" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical" >
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="20dp"
+                        android:layout_marginTop="5dp"
+                        android:text="QQ"
+                        android:textColor="#a000"
+                        android:textSize="22sp" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginRight="5dp"
+                        android:layout_marginTop="5dp"
+                        android:lines="2"
+                        android:paddingBottom="5dp"
+                        android:text="QQ号码:873085151\n点击打开会话"
+                        android:textColor="#5A626D"
+                        android:textSize="14sp" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <View style="@style/splitor" />
+        </FrameLayout>
+        
+        
+          <FrameLayout
+            android:id="@+id/fl_item5"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" >
+
+           
+
+            <LinearLayout style="@style/author_item"
+                android:id="@+id/ll_phone"
+                 >
+
+                <ImageView
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginLeft="15dp"
+                    android:background="@drawable/ic_phone" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical" >
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="20dp"
+                        android:layout_marginTop="5dp"
+                        android:text="手机"
+                        android:textColor="#a000"
+                        android:textSize="22sp" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginRight="5dp"
+                        android:layout_marginTop="5dp"
+                        android:lines="2"
+                        android:paddingBottom="5dp"
+                        android:text="手机:15018880175\n点击拨打电话"
+                        android:textColor="#5A626D"
+                        android:textSize="14sp" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <View style="@style/splitor" />
+        </FrameLayout>
+        
+            <FrameLayout
+            android:id="@+id/fl_item6"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" >
+
+           
+
+            <LinearLayout style="@style/author_item" >
+
+                <ImageView
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginLeft="15dp"
+                    android:background="@drawable/ic_email" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical" >
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="20dp"
+                        android:layout_marginTop="5dp"
+                        android:text="QQ邮箱"
+                        android:textColor="#a000"
+                        android:textSize="22sp" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginRight="5dp"
+                        android:layout_marginTop="5dp"
+                        android:lines="2"
+                        android:paddingBottom="5dp"
+                        android:text="邮箱:873085151@qq.com\n\\(^o^)/"
+                        android:textColor="#5A626D"
+                        android:textSize="14sp" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <View style="@style/splitor" />
+        </FrameLayout>
+          
+          
+    </LinearLayout>
+
+</ScrollView>

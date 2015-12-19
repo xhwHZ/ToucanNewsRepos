@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:xhw="http://schemas.android.com/apk/res/com.xhw.toucan.news"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <!-- ScrollView只能有一个子元素 -->
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical" >
+
+           <com.xhw.toucan.news.view.SettingItemView
+                android:id="@+id/siv_update"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                xhw:desc_off="自动更新已经关闭"
+                xhw:desc_on="自动更新已经开启"
+                xhw:title="自动更新设置" /> 
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>
