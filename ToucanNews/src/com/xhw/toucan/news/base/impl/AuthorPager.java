@@ -21,6 +21,7 @@ import com.nineoldandroids.animation.ValueAnimator;
 import com.nineoldandroids.animation.ValueAnimator.AnimatorUpdateListener;
 import com.xhw.toucan.news.R;
 import com.xhw.toucan.news.activity.MoreActivity;
+import com.xhw.toucan.news.activity.NewsDetailActivity;
 import com.xhw.toucan.news.base.BasePager;
 import com.xhw.toucan.news.listener.DefaultAnimatorListener;
 import com.xhw.toucan.news.utils.APPUtils;
@@ -51,8 +52,15 @@ public class AuthorPager extends BasePager implements OnClickListener
 		initQQ();
 		initPhone();
 		initMore();
+		initGit();
 		fl_content.addView(child);
 
+	}
+
+	private void initGit()
+	{
+		LinearLayout ll_git=(LinearLayout) child.findViewById(R.id.ll_git);
+		ll_git.setOnClickListener(this);
 	}
 
 	private void initMore()
@@ -107,6 +115,13 @@ public class AuthorPager extends BasePager implements OnClickListener
 	{
 		switch (v.getId())
 		{
+		
+		case R.id.ll_git:
+			Intent intent=new Intent(activity, NewsDetailActivity.class);
+			intent.putExtra("url", "https://github.com/xhwHZ");
+			activity.startActivity(intent);
+			break;
+		
 		case R.id.ll_more:
 			activity.startActivity(new Intent(activity, MoreActivity.class));
 		break;

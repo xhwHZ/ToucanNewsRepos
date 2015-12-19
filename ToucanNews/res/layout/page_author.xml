@@ -103,7 +103,9 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content" >
 
-            <LinearLayout style="@style/author_item" >
+            <LinearLayout
+                android:id="@+id/ll_git"
+                 style="@style/author_item" >
 
                 <ImageView
                     android:layout_width="50dp"
@@ -127,14 +129,15 @@
                         android:textSize="22sp" />
 
                     <TextView
+                        android:id="@+id/tv_git"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:layout_marginLeft="10dp"
                         android:layout_marginRight="5dp"
                         android:layout_marginTop="5dp"
-                        android:lines="2"
                         android:paddingBottom="5dp"
-                        android:text="www.baidu.com\nwww.google.com"
+                        android:lines="2"
+                        android:text="点击查看我的Github:\nhttps://github.com/xhwHZ/"
                         android:textColor="#5A626D"
                         android:textSize="14sp" />
                 </LinearLayout>
@@ -182,7 +185,7 @@
                         android:layout_marginLeft="10dp"
                         android:layout_marginRight="5dp"
                         android:layout_marginTop="5dp"
-                        android:text="java、android、c#、unity3d、常用数据库、servlet、jsp...少侠请留步，我看你骨骼惊奇，天生就是练舞奇才，不如我们趁着夜色正好，给我来一首青花瓷，虽然我语无伦次，但是，哈哈哈，我只是测试的代码而是，真是个牺牲品啊啊啊啊啊啊啊啊啊。"
+                        android:text="java、android、c#、unity3d、常用数据库、servlet、jsp、c语言、c++...少侠请留步，我看你骨骼惊奇，天生就是练武奇才，不如给小弟我赏个脸，点击更多信息，查看更多详情，或者给我打个电话、发个QQ，闲聊几句，小弟实属感激不尽呐。怎么才能凑多点字数呐？？？不如我们来灌水吧。这是一条漫长的小尾巴。。。哈哈哈！！！"
                         android:textColor="#5A626D"
                         android:textSize="14sp" />
 
